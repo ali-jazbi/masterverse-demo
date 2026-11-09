@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>MasterVerse Teacher Edition</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;direction:rtl;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#001e2f", "primary": "#4edea3", "error-container": "#93000a", "secondary": "#c0c1ff", "tertiary-fixed-dim": "#89ceff", "on-secondary-container": "#b0b2ff", "secondary-fixed-dim": "#c0c1ff", "on-background": "#dfe2ee", "outline-variant": "#3c4a42", "on-primary-container": "#00422b", "background": "#0f131c", "surface-bright": "#353942", "surface-container-high": "#262a33", "inverse-primary": "#006c49", "outline": "#86948a", "surface": "#0f131c", "tertiary-fixed": "#c9e6ff", "surface-container-lowest": "#0a0e16", "surface-container-highest": "#31353e", "on-surface-variant": "#bbcabf", "primary-fixed": "#6ffbbe", "on-secondary-fixed-variant": "#2f2ebe", "on-error-container": "#ffdad6", "surface-dim": "#0f131c", "on-secondary": "#1000a9", "inverse-surface": "#dfe2ee", "on-tertiary-container": "#003d59", "secondary-container": "#3131c0", "secondary-fixed": "#e1e0ff", "tertiary-container": "#23acf1", "inverse-on-surface": "#2c3039", "surface-variant": "#31353e", "on-surface": "#dfe2ee", "error": "#ffb4ab", "primary-fixed-dim": "#4edea3", "on-tertiary": "#00344d", "on-tertiary-fixed-variant": "#004c6e", "surface-container-low": "#181c24", "on-primary-fixed-variant": "#005236", "tertiary": "#89ceff", "primary-container": "#10b981", "on-primary-fixed": "#002113", "on-primary": "#003824", "on-secondary-fixed": "#07006c", "surface-tint": "#4edea3", "on-error": "#690005", "surface-container": "#1c2028" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.25rem", "margin": "2rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "code-sm": ["JetBrains Mono"], "label-md": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "52px", "fontWeight": "700" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link rel="stylesheet" href="shared.css"/>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col truncate"><span class="font-title-md text-title-md text-on-surface truncate">Students</span><span class="font-label-sm text-label-sm text-primary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>آنلاین • استاد مسترورس</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="جستجو" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="اعلانات" class="relative w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-lg gap-space-md">
+<!-- Header Pulse Overview & Live Indicators -->
+<section class="flex flex-col gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">رصد زنده یادگیری</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>۴۲ نفر آنلاین در چالش</span>
+</span>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">کل پایش</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">۲۴۸</span>
+<span class="font-code-sm text-code-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>+۴.۲٪
+          </span>
+</div>
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">استریک فعال</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">۱۸۴</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">۷۴٪ کلاس</span>
+</div>
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">نیاز مداخله</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">۱۴</span>
+<span class="font-code-sm text-code-sm text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">warning</span>فوری
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Segment Filters -->
+<section class="flex flex-col gap-space-xs">
+<div class="relative w-full">
+<div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-xl py-3 pr-10 pl-11 outline-none placeholder:text-outline transition-all duration-200" id="studentSearchInput" placeholder="جستجو بر اساس نام، تراز، کلاس یا استریک..." type="text"/>
+<button aria-label="فیلتر پیشرفته" class="absolute inset-y-1.5 left-1.5 w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Filter Chips Carousel -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar text-nowrap">
+<button class="filter-chip active flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>همه دانش‌آموزان (۲۴۸)</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_fire_department</span>
+<span>استریک فعال</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[16px] text-error">notification_important</span>
+<span>نیازمند مداخله فوری (۱۴)</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[16px] text-primary">workspace_premium</span>
+<span>تراز +۷۰۰۰</span>
+</button>
+</div>
+</section>
+<!-- Student Cards Stack -->
+<section class="flex flex-col gap-space-sm" id="studentList">
+<!-- Card 1: آریا رادمنش (High Performer, Interactive Sheet trigger) -->
+<div class="student-card cursor-pointer group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all duration-200 shadow-md relative" onclick="openStudentSheet('arya')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Close-up professional portrait of a studious Iranian teenage boy with glasses and smart casual shirt, ambient dark obsidian background with slight green neon glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi9iDvqjoqXflEm2FoROo-McvnJ414E5MA-RzCE093OStoivSt26Vjv98p4_sBd-OX-gH8eWdD24dAOeCVD7M-lNLQI-QqGLgN4asE7yML4HIX2uBrMZhNtU8vOU2N5RBy8wWaCLguwyQXcNY7yC8UXM_kX1n1T55zxAMKKnL--gXMob21y5EEv951hDfDCpJe5toru4SYEAuteuyxdLtJWmbXlGnyuVhf0vMmhlQy"/>
+</div>
+<span class="absolute bottom-0 left-0 w-3.5 h-3.5 rounded-full bg-primary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">آریا رادمنش</h3>
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded">رتبه ۱ تجربی</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                آنلاین در رقابت BioRush
+              </span>
+<span>• دوازدهم تجربی الف</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); quickChat('آریا رادمنش')" title="ارسال پیام">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</div>
+<!-- Metrics Row -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest rounded-lg p-2.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز کل</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">۷,۳۵۰</span>
+<span class="font-code-sm text-code-sm text-primary">+۱۲.۴٪</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">زنجیره استریک</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm font-bold">۱۸ روز</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">نرخ برد دوئل</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">sports_kabaddi</span>
+<span class="font-headline-sm text-headline-sm font-bold">۸۳٪</span>
+</div>
+</div>
+</div>
+<!-- Quick Concept Mastery Bars -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">وضعیت تسلط زیست‌شناسی گیاهی</span>
+<span class="text-primary font-bold">۸۹٪</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 89%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">insights</span>
+          تحلیل عمیق یادگیری و ضعف‌های تستی
+        </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface group-hover:translate-x-[-2px] transition-transform">chevron_left</span>
+</div>
+</div>
+<!-- Card 2: سارا کاظمی (High Performer) -->
+<div class="student-card cursor-pointer group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all duration-200 shadow-md relative" onclick="openStudentSheet('sara')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait of an intelligent Iranian high school girl with dark hair and a modern charcoal hoodie, dark academia lighting with cool cyan rim light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGUnQqozvEDyUmk4qYYZY-aL9PImjh_yBaDDeF4MCWKvZ6REvdddwqUUlLMMoEePnrRZEOxsjNivKfdF45udUwY77F2zsSrmPCv0hWr56IEt5sp9pseaHoSy3Amy4lUCHfgXV_BFEGD2le1cgpH26_hIjNT-h285Ho_DXm3xuVZAt93F9stPK1IREX_cyrxRQH_up6mzzVjGzIhB6QirtRH8Z_a6bEs86dvjWWAU9Z"/>
+</div>
+<span class="absolute bottom-0 left-0 w-3.5 h-3.5 rounded-full bg-primary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">سارا کاظمی</h3>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded">رتبه ۲ کلاسی</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                پاسخ‌گویی به آزمون جامع مرحله ۴
+              </span>
+<span>• دوازدهم تجربی الف</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); quickChat('سارا کاظمی')" title="ارسال پیام">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest rounded-lg p-2.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز کل</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">۷,۱۹۰</span>
+<span class="font-code-sm text-code-sm text-primary">+۸.۱٪</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">زنجیره استریک</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm font-bold">۲۴ روز</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">سرعت پاسخ</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+<span class="font-headline-sm text-headline-sm font-bold">۴۱ ثانیه</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">پیشرفت بسته جامع ژنتیک مولکولی</span>
+<span class="text-primary font-bold">۹۴٪</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: سهیل دهقانی (Frozen Streak, Needs Follow-up) -->
+<div class="student-card cursor-pointer group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all duration-200 shadow-md relative" onclick="openStudentSheet('soheil')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male student with tired expression studying at night with warm lamp and dark room shadows, realistic modern cinematic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdiRt_rprZOMjOJ6ntJo89Nt5Xan3m9-rMhpENlQFG0k44xgKqdHliq6t5gxqncT2OOJ2gls0ir8zR5kDeqxd0VA0bhJkJbfLysGOrk0MT_OpCOA3c3GXLZ3qbK5x-f0eyV7RDd-3kMec1iKFxV0vgnEIHyYZ8jLTWqjm3Ksdou9Puqmc0y-2Cd-6mYKVHxLvspSgDS3QLuGqRSxLklAKS0IOaVuitn3y553FS2cQz"/>
+</div>
+<span class="absolute bottom-0 left-0 w-3.5 h-3.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-low" title="استریک فریز شده"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">سهیل دهقانی</h3>
+<span class="font-label-sm text-label-sm bg-surface-bright text-tertiary px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">ac_unit</span>
+                فریز شده
+              </span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary">آخرین فعالیت: ۳ ساعت پیش</span>
+<span>• دوازدهم تجربی ب</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface-container text-on-surface-variant hover:text-tertiary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); quickChat('سهیل دهقانی')" title="ارسال هشدار مطالعه">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest rounded-lg p-2.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز کل</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">۶,۶۲۰</span>
+<span class="font-code-sm text-code-sm text-error">-۱.۸٪</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">استریک نجات‌یافته</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">ac_unit</span>
+<span class="font-headline-sm text-headline-sm font-bold">۹ روز</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">وضعیت یادگیری</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="font-label-sm text-label-sm font-bold">نیازمند مرور</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container rounded-lg px-2.5 py-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+          انقضای سپر استریک تا ساعت ۲۴:۰۰ امشب
+        </span>
+<button class="text-primary font-bold hover:underline" onclick="event.stopPropagation(); sendNudge('سهیل دهقانی')">ارسال تلنگر</button>
+</div>
+</div>
+<!-- Card 4: مهسا تقوی (Broken Streak, Urgent Intervention) -->
+<div class="student-card cursor-pointer group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm transition-all duration-200 shadow-md relative" onclick="openStudentSheet('mahsa')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian female student looking thoughtful in classroom library, low-key lighting with moody dark tones and subtle red backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6o4Q_cqXqXJJ_9-06KLegyae_twP-N-r5aic75OOmHD0u17_g__h-OiiAIJedIBRZ0inFWxvSv5TNbfbG5ATDR7pmBi8hPNEDdSe5CvvVM6UnGRQ-cNFx2UpL2RIJ4vWxXc98OYNOghWhPHoGaC-bcn_ErbdumLpAF1eVTNMxy33xQd8Cz4GOZDAQQMiZCaQ0Eu8tfz_uvkD5KZCvjp-1eIVGsvk1otnymPqE8aw-"/>
+</div>
+<span class="absolute bottom-0 left-0 w-3.5 h-3.5 rounded-full bg-error ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">مهسا تقوی</h3>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+                افت تراز
+              </span>
+</div>
+<div class="flex items-center gap-2 text-error font-label-sm text-label-sm">
+<span>قطع زنجیره (۳ روز عدم ورود)</span>
+<span class="text-on-surface-variant">• دوازدهم تجربی الف</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-error-container text-on-error-container hover:bg-error flex items-center justify-center transition-colors" onclick="event.stopPropagation(); callGuardian('مهسا تقوی')" title="تماس فوری با ولی">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-lowest rounded-lg p-2.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز کل</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-error font-bold">۵,۸۹۰</span>
+<span class="font-code-sm text-code-sm text-error">-۹.۴٪</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">استریک</span>
+<div class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[18px]">heart_broken</span>
+<span class="font-headline-sm text-headline-sm font-bold">۰ روز</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تست‌های جامانده</span>
+<div class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[18px]">assignment_late</span>
+<span class="font-headline-sm text-headline-sm font-bold">۱۲۰ تست</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between bg-error-container/20 rounded-lg p-2.5 text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+          نیاز به تماس هماهنگی با والدین و مشاور
+        </span>
+<span class="text-primary font-bold">تنظیم جلسه</span>
+</div>
+</div>
+</section>
+<!-- Interactive Analytical Bottom Sheet (Modal Drawdown) -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-all duration-300 opacity-0 flex flex-col justify-end" id="analyticalSheet">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-background/80 backdrop-blur-sm pointer-events-auto" id="sheetBackdrop" onclick="closeStudentSheet()"></div>
+<!-- Sheet Surface Container -->
+<div class="relative z-10 w-full bg-surface-container-low rounded-t-2xl max-h-[751px] overflow-y-auto flex flex-col shadow-2xl transform translate-y-full transition-transform duration-300 ease-out pointer-events-auto pb-safe" id="sheetContent">
+<!-- Drag pill -->
+<div class="w-full flex justify-center pt-3 pb-1" onclick="closeStudentSheet()">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Student Header in Sheet -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Close up avatar of the focused student in dark educational UI" id="sheetAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvFFFOogsCgn63SEUEtyxVEcOHMeVc26Y2-c-yDoAnBZ_mrXTFdPq-kiLou3ahlY7yozg7abl4yRlSGSrGo1mUX7SPP7-YSKTLWEqYUvoVZxiyKLyJsu_EZJdYodYt1j6UQaeVpt4TJmLT05LBdioJsfzJ2WrgJ32jQ4UuRuWuKbucbTUTty-MBnD6a3Dj2ky2PqLaz5PHC05FLwQ0q6t0pDE6CEfW3x6Gyrd72bvF"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface" id="sheetName">آریا رادمنش</h2>
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary-container px-2 py-0.5 rounded" id="sheetBadge">تراز ۷,۳۵۰</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">پرونده تحلیلی مهارت‌های تست‌زنی زیست‌شناسی</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeStudentSheet()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Diagnostic Radar/Comparison Overview -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+              ماتریس پایداری مبحثی
+            </span>
+<span class="font-label-sm text-label-sm text-primary">به‌روزرسانی: ۲ ساعت قبل</span>
+</div>
+<!-- Strong Concepts -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">thumb_up</span>
+              نقاط قوت مبحثی و تسلط تثبیت‌شده
+            </span>
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface">میتوز، میوز و تولیدمثل سلولی</span>
+<span class="text-primary font-bold">۹۲٪ (عالی)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface">دستگاه گردش مواد و قلب انسان</span>
+<span class="text-primary font-bold">۸۸٪ (پایدار)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<!-- Weak Points / Critical Attention -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-error text-[16px]">error</span>
+              نقاط ضعف فوری (نیازمند مداخله و تست جبرانی)
+            </span>
+<div class="flex flex-col gap-1.5 bg-error-container/15 p-2.5 rounded-lg">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface font-medium">جهش‌های نقطه‌ای و دگرقالب (فصل ۵)</span>
+<span class="text-error font-bold">۳۸٪ (بحرانی)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2">
+<div class="bg-error h-2 rounded-full" style="width: 38%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+                تله‌های مفهومی در سوالات شمارشی ترکیبی با کنکور ۱۴۰۲ مشاهده شده است.
+              </span>
+</div>
+</div>
+</div>
+<!-- Student Habit Sparkline -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-title-md text-title-md text-on-surface">نرخ دقت در دوئل‌های ۷ روز اخیر</span>
+<span class="font-code-sm text-code-sm text-primary">میانگین: ۸۴٪</span>
+</div>
+<!-- Inline Sparkline Visualization -->
+<div class="w-full h-16 flex items-end gap-1.5 pt-2 px-1">
+<div class="flex-1 bg-surface-container-high hover:bg-primary transition-colors rounded-t h-[65%]" title="شنبه: ۶۵٪"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary transition-colors rounded-t h-[75%]" title="یکشنبه: ۷۵٪"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary transition-colors rounded-t h-[90%]" title="دوشنبه: ۹۰٪"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary transition-colors rounded-t h-[82%]" title="سه‌شنبه: ۸۲٪"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-primary transition-colors rounded-t h-[78%]" title="چهارشنبه: ۷۸٪"></div>
+<div class="flex-1 bg-primary rounded-t h-[95%]" title="پنجشنبه: ۹۵٪"></div>
+<div class="flex-1 bg-primary rounded-t h-[88%]" title="جمعه: ۸۸٪"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>شنبه</span>
+<span>امروز</span>
+</div>
+</div>
+<!-- Primary Action Callout -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-title-md text-title-md font-bold flex items-center justify-center gap-2 active:scale-95 transition-all shadow-lg hover:brightness-110" id="assignTestPackBtn" onclick="assignRemedialPackage()">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+<span>تخصیص فوری بسته تست جبرانی هوشمند</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="quickChat(currentStudentName)">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>پیام به دانش‌آموز</span>
+</button>
+<button class="py-2.5 px-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="callGuardian(currentStudentName)">
+<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+<span>تماس با اولیا</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-24 left-4 right-4 z-50 pointer-events-none transform translate-y-6 opacity-0 transition-all duration-300 flex justify-center" id="toastNotification">
+<div class="bg-surface-container-highest text-on-surface px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 max-w-sm border-none">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md" id="toastMessage">عملیات با موفقیت انجام شد.</span>
+</div>
+</div>
+</div>
+<script>
+  let currentStudentName = 'آریا رادمنش';
+
+  const studentDataMap = {
+    arya: {
+      name: 'آریا رادمنش',
+      score: 'تراز ۷,۳۵۰',
+      alt: 'Close-up professional portrait of a studious Iranian teenage boy with glasses and smart casual shirt, ambient dark obsidian background with slight green neon glow',
+      strengths: [
+        { title: 'میتوز، میوز و تولیدمثل سلولی', pct: '۹۲٪', val: 92 },
+        { title: 'دستگاه گردش مواد و قلب انسان', pct: '۸۸٪', val: 88 }
+      ],
+      weakness: { title: 'جهش‌های نقطه‌ای و دگرقالب (فصل ۵)', pct: '۳۸٪', val: 38 }
+    },
+    sara: {
+      name: 'سارا کاظمی',
+      score: 'تراز ۷,۱۹۰',
+      alt: 'Portrait of an intelligent Iranian high school girl with dark hair and a modern charcoal hoodie, dark academia lighting with cool cyan rim light',
+      strengths: [
+        { title: 'ژنتیک مولکولی و همانندسازی', pct: '۹۶٪', val: 96 },
+        { title: 'تنظیم اسمزی و کلیه', pct: '۹۱٪', val: 91 }
+      ],
+      weakness: { title: 'شارش انرژی در گیاهان (فتوسنتز)', pct: '۵۲٪', val: 52 }
+    },
+    soheil: {
+      name: 'سهیل دهقانی',
+      score: 'تراز ۶,۶۲۰',
+      alt: 'Portrait of a young male student with tired expression studying at night with warm lamp and dark room shadows, realistic modern cinematic',
+      strengths: [
+        { title: 'ساختار گوارش و جذب مواد', pct: '۷۹٪', val: 79 },
+        { title: 'بافت‌های گیاهی مقدماتی', pct: '۷۴٪', val: 74 }
+      ],
+      weakness: { title: 'توالی‌یابی ژن و فناوری زیستی', pct: '۲۹٪', val: 29 }
+    },
+    mahsa: {
+      name: 'مهسا تقوی',
+      score: 'تراز ۵,۸۹۰',
+      alt: 'Portrait of an Iranian female student looking thoughtful in classroom library, low-key lighting with moody dark tones and subtle red backlight',
+      strengths: [
+        { title: 'حواس پنج‌گانه و دستگاه حرکتی', pct: '۶۸٪', val: 68 },
+        { title: 'سیستم دفاعی بدن', pct: '۶۵٪', val: 65 }
+      ],
+      weakness: { title: 'مفاهیم ژنتیک مندلی و شجره‌نامه', pct: '۲۱٪', val: 21 }
+    }
+  };
+
+  function openStudentSheet(id) {
+    const data = studentDataMap[id] || studentDataMap.arya;
+    currentStudentName = data.name;
+
+    document.getElementById('sheetName').textContent = data.name;
+    document.getElementById('sheetBadge').textContent = data.score;
+    const sheetAvatar = document.getElementById('sheetAvatar');
+    sheetAvatar.setAttribute('data-alt', data.alt);
+
+    const sheet = document.getElementById('analyticalSheet');
+    const content = document.getElementById('sheetContent');
+    sheet.classList.remove('opacity-0', 'pointer-events-none');
+    sheet.classList.add('opacity-100');
+    content.classList.remove('translate-y-full');
+    content.classList.add('translate-y-0');
+  }
+
+  function closeStudentSheet() {
+    const sheet = document.getElementById('analyticalSheet');
+    const content = document.getElementById('sheetContent');
+    content.classList.remove('translate-y-0');
+    content.classList.add('translate-y-full');
+    sheet.classList.remove('opacity-100');
+    sheet.classList.add('opacity-0', 'pointer-events-none');
+  }
+
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    document.getElementById('toastMessage').textContent = msg;
+    document.getElementById('toastIcon').textContent = icon;
+    toast.classList.remove('opacity-0', 'translate-y-6', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-6', 'pointer-events-none');
+    }, 2800);
+  }
+
+  function assignRemedialPackage() {
+    const btn = document.getElementById('assignTestPackBtn');
+    btn.disabled = true;
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>در حال صدور بسته هدفمند...</span>`;
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[22px]">verified</span><span>بسته ۵۰ تستی با موفقیت تخصیص یافت</span>`;
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-primary-container');
+      showToast(`بسته جبرانی برای ${currentStudentName} در اپلیکیشن فعال گردید.`);
+    }, 800);
+  }
+
+  function quickChat(name) {
+    showToast(`صفحه پیام مستقیم به ${name} باز شد.`, 'forum');
+  }
+
+  function callGuardian(name) {
+    showToast(`در حال برقراری تماس با اولیای ${name}...`, 'call');
+  }
+
+  function sendNudge(name) {
+    showToast(`اعلان هشدار استریک برای ${name} با موفقیت ارسال شد.`, 'notifications_active');
+  }
+
+  // Live filter chips switching behavior
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.filter-chip').forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      this.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      this.classList.add('bg-primary', 'text-on-primary');
+      showToast(`فیلتر اعمال شد: ${this.innerText.trim()}`, 'filter_list');
+    });
+  });
+
+  // Client-side quick search filtering
+  document.getElementById('studentSearchInput').addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.student-card');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(query)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm">داشبورد</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="classes" href="#"><span class="material-symbols-outlined text-[22px]">meeting_room</span><span class="font-label-sm text-label-sm">کلاس‌ها</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="quiz-builder" href="#"><span class="material-symbols-outlined text-[22px]">quiz</span><span class="font-label-sm text-label-sm">آزمون‌ساز</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] h-12 rounded-xl transition-all active:scale-95 text-primary font-bold" data-path="students" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-label-sm">دانش‌آموزان</span></a></div></nav><script src="shared.js" defer></script>
+</body></html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Yekan Bakh','Vazirmatn','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#00422b","surface":"#0f131c","on-secondary-fixed":"#07006c","on-secondary-container":"#b0b2ff","secondary-fixed":"#e1e0ff","outline":"#86948a","inverse-primary":"#006c49","surface-container-low":"#181c24","on-tertiary":"#00344d","surface-container":"#1c2028","error":"#ffb4ab","primary-fixed-dim":"#4edea3","on-background":"#dfe2ee","error-container":"#93000a","on-error":"#690005","primary":"#4edea3","on-tertiary-container":"#003d59","tertiary-fixed":"#c9e6ff","tertiary-container":"#23acf1","surface-dim":"#0f131c","on-error-container":"#ffdad6","primary-fixed":"#6ffbbe","primary-container":"#10b981","surface-variant":"#31353e","inverse-surface":"#dfe2ee","surface-tint":"#4edea3","on-surface-variant":"#bbcabf","surface-container-lowest":"#0a0e16","on-tertiary-fixed-variant":"#004c6e","on-secondary":"#1000a9","tertiary":"#89ceff","inverse-on-surface":"#2c3039","secondary-container":"#3131c0","surface-container-high":"#262a33","tertiary-fixed-dim":"#89ceff","on-surface":"#dfe2ee","secondary-fixed-dim":"#c0c1ff","outline-variant":"#3c4a42","surface-container-highest":"#31353e","on-primary-fixed":"#002113","surface-bright":"#353942","on-secondary-fixed-variant":"#2f2ebe","on-primary":"#003824","secondary":"#c0c1ff","on-primary-fixed-variant":"#005236","background":"#0f131c","on-tertiary-fixed":"#001e2f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","margin":"2rem","gutter":"1.25rem","space-xs":"0.25rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"display-lg":["40px",{"lineHeight":"52px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}]}}}};</script><link rel="stylesheet" href="shared.css"/>
+</head><body class="bg-surface text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-lg"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[24px]">school</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold">مسترورس</span><span class="font-label-sm text-label-sm text-primary">پورتال اساتید و دبیران</span></div></div><div class="px-space-md"><div class="bg-surface-container px-space-md py-space-sm rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">سرور تهران / زنده</span></div><span class="font-code-sm text-code-sm text-primary">۱۴۰۴</span></div></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-xl"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-xl" data-path="dashboard-live-pulse" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">داشبورد و دیده‌بان زنده</span></div><span class="font-label-sm text-label-sm bg-surface-container px-space-xs rounded text-primary">Live</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="classes-study-groups" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md">کلاس‌ها و گروه‌ها</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="question-bank-quiz-studio" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">بانک سوال و آزمون‌ساز</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="students-ranks" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">دانش‌آموزان و رتبه‌بندی</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="classroom-duels-leagues" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">swords</span><span class="font-body-md text-body-md">لیگ‌ها و دوئل‌های کلاسی</span></div><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs rounded">رقابتی</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics-gradebook" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">تحلیل عملکرد و کارنامه</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portal-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">تنظیمات و دسترسی‌ها</span></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">دکتر شایان پارسا</span><span class="font-label-sm text-label-sm text-on-surface-variant">زیست کنکور</span></div></div><button class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md w-1/3"><div class="relative w-full"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant pr-9 pl-3 py-1.5 rounded-xl font-body-sm text-body-sm focus:outline-none" placeholder="جستجوی سریع درس، سوال، آزمون یا نام دانش‌آموز..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl"><button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold transition-colors">تجربی</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors">ریاضی</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors">انسانی</button></div><div class="flex items-center gap-space-sm"><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full"></span></button><button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">campaign</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-gutter bg-surface"><div class="flex flex-col w-full pb-space-xl gap-space-lg">
+<!-- Top Command Center Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-28 right-1/4 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            پایش لحظه‌ای سیستم فعال است
+          </span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">دوشنبه، ۱۸ اسفند ۱۴۰۳</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          روز بخیر، دکتر پارسا؛ نبض آموزشی کلاس‌ها پایدار است
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          در ۲۴ ساعت گذشته، ۴۲ دانش‌آموز در چالش شبانه ژنتیک شرکت کردند و میانگین پاسخگویی به سوالات مفهومی ۳.۲ درصد رشد داشته است.
+        </p>
+</div>
+<!-- Quick Action Triggers -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-sm rounded-xl font-title-md text-title-md font-bold shadow-lg hover:brightness-110 active:scale-95 transition-all" id="btn-live-duel-trigger">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">swords</span>
+<span>شروع دوئل زنده کلاسی</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container-high text-on-surface hover:bg-surface-bright px-space-md py-space-sm rounded-xl font-title-md text-title-md transition-all" id="btn-instant-quiz">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+<span>طراحی آزمون فوری</span>
+</button>
+<button class="flex items-center justify-center p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 Primary KPI Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">دانش‌آموزان فعال پلتفرم</span>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">۲۴۸</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+          ۸۷٪ حضور هفته
+        </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 87%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">از مجموع ۲۸۵ دانش‌آموز ثبت‌نامی</span>
+</div>
+<!-- KPI 2 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">میانگین تراز کلاسی آزمون‌ها</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">award_star</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">۶,۸۵۰</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +۱۲۰ تراز (ماه)
+        </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 76%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">معیار استاندارد قلم‌چی و ماز</span>
+</div>
+<!-- KPI 3 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">نرخ تکمیل کوییزهای روزانه</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">۹۱.۴٪</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">check</span>
+          پایداری بالا
+        </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed h-full rounded-full" style="width: 91.4%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">میانگین زمان پاسخگویی: ۱۲ دقیقه</span>
+</div>
+<!-- KPI 4 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">تست‌های بررسی‌شده (۲۴h)</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">quiz</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">۱,۴۲۰</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+          تصحیح خودکار
+        </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full" style="width: 82%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">۳۸۰ مورد نیازمند تحلیل معلم</span>
+</div>
+</div>
+<!-- Live Pulse Monitor & Arena Section -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Live Duel Active Pulse (8 Columns) -->
+<div class="xl:col-span-8 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-error"></span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+              دوئل زنده در جریان: زیست تیزهوشان دوازدهم
+              <span class="text-xs font-code-sm bg-surface-container px-2 py-0.5 rounded text-primary">گروه الف</span>
+</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مبحث چرخه کربس و فسفوریلاسیون اکسیداتیو (سوال ۷ از ۱۰)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-xl bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<span class="font-code-sm text-code-sm font-bold text-primary" id="duel-countdown">۰۰:۲۴</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-space-sm py-1 rounded-xl text-on-surface-variant">
+            ۴۲ شرکت‌کننده برخط
+          </span>
+</div>
+</div>
+<!-- Live Question Box & Realtime Voting Matrix -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">متن تست شماره ۷ (درجه سختی: دشوار)</span>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">
+              «کدام عبارت در ارتباط با ناقلین الکترون در غشای درونی میتوکندری و تولید مولکول‌های پرانرژی به درستی بیان شده است؟»
+            </p>
+</div>
+<span class="shrink-0 bg-surface-container-highest text-on-surface-variant px-2.5 py-1 rounded-lg font-code-sm text-code-sm">
+            ارزش: ۳۰+ امتیاز
+          </span>
+</div>
+<!-- Options Live Distribution Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Option 1 -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-1.5 relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">گزینه ۱ (کمپلکس I)</span>
+<span class="font-code-sm text-code-sm text-primary font-bold">۲۶ دانش‌آموز (۶۲٪)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden z-10">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 62%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary z-10">پاسخ کلیدی صحیح</span>
+</div>
+<!-- Option 2 -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-1.5 relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">گزینه ۲ (سیتوکروم c)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">۸ دانش‌آموز (۱۹٪)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden z-10">
+<div class="bg-secondary-fixed-variant h-full rounded-full transition-all duration-700" style="width: 19%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant z-10">دام تستی رایج</span>
+</div>
+<!-- Option 3 -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-1.5 relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">گزینه ۳ (یوبیکینون)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">۵ دانش‌آموز (۱۲٪)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden z-10">
+<div class="bg-surface-variant h-full rounded-full transition-all duration-700" style="width: 12%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant z-10">نادرست</span>
+</div>
+<!-- Option 4 -->
+<div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-1.5 relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">گزینه ۴ (آنزیم سنتاز)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">۳ دانش‌آموز (۷٪)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden z-10">
+<div class="bg-surface-variant h-full rounded-full transition-all duration-700" style="width: 7%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant z-10">نادرست</span>
+</div>
+</div>
+</div>
+<!-- Live Speed Podium & Leaderboard Snippet -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-high/40 p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="flex -space-x-3 space-x-reverse overflow-hidden">
+<div class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-primary/20 text-primary flex items-center justify-center font-bold text-xs">۱</div>
+<div class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-secondary/20 text-secondary flex items-center justify-center font-bold text-xs">۲</div>
+<div class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-tertiary/20 text-tertiary flex items-center justify-center font-bold text-xs">۳</div>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">صدرنشینان لحظه‌ای سوال</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">پرهام رضایی (۳.۱ ثانیه)، نیلوفر دادرس (۴.۲ ثانیه)، ارشیا مهرآرا (۴.۵ ثانیه)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 bg-surface-container-high hover:bg-surface-bright rounded-xl font-label-md text-label-md text-on-surface transition-colors">
+            توقف موقت دوئل
+          </button>
+<button class="px-space-md py-1.5 bg-primary text-on-primary font-bold rounded-xl font-label-md text-label-md hover:brightness-105 transition-colors">
+            رفتن به سوال بعد
+          </button>
+</div>
+</div>
+</div>
+<!-- Live Performance Visualizer & Chapter Mastery (4 Columns) -->
+<div class="xl:col-span-4 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">تسلط مبحثی کلاس‌های جاری</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">پراکندگی نمرات مباحث ترم ۲</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+<!-- Inline SVG Donut Chart for Class Mastery Breakdown -->
+<div class="flex items-center justify-center relative py-space-sm">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 120 120">
+<circle class="stroke-surface-container-highest" cx="60" cy="60" fill="transparent" r="48" stroke-width="12"></circle>
+<!-- Mastery Excellent: 45% -> 301.59 * 0.45 = 135.7 -->
+<circle class="stroke-primary" cx="60" cy="60" fill="transparent" r="48" stroke-dasharray="301.59" stroke-dashoffset="165.8" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Mastery Average: 35% -> 105.5 -->
+<circle class="stroke-secondary-fixed" cx="60" cy="60" fill="transparent" r="48" stroke-dasharray="301.59" stroke-dashoffset="230" stroke-linecap="round" stroke-width="12"></circle>
+<!-- At Risk: 20% -->
+<circle class="stroke-error" cx="60" cy="60" fill="transparent" r="48" stroke-dasharray="301.59" stroke-dashoffset="260" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">۷۴٪</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">میانگین تسلط</span>
+</div>
+</div>
+<!-- Segment Legend Breakdown -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">تسلط عالی (تراز بالای ۷۰۰۰)</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-bold">۴۵٪ (۱۱۲ نفر)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed"></span>
+<span class="font-body-sm text-body-sm text-on-surface">دامنه متوسط و پایدار</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-bold">۳۵٪ (۸۷ نفر)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface">نیازمند آزمون جبرانی</span>
+</div>
+<span class="font-code-sm text-code-sm text-error font-bold">۲۰٪ (۴۹ نفر)</span>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high rounded-xl text-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1">
+<span>صدور برنامه مرور هوشمند برای گروه ضعیف</span>
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+</div>
+</div>
+<!-- At-Risk & High-Achievers Academic Intervention Hub -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Attention Needed Students (7 Columns) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-error-container/30 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">دانش‌آموزان نیازمند مداخله و توجه فوری</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">شناسایی هوشمند افت استریک، غیبت مکرر یا شیب منفی آزمون‌ها</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm bg-error/10 text-error px-2.5 py-1 rounded-full font-bold">۴ هشدار جدید</span>
+</div>
+<!-- Student Alert List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-sm">
+              س.ک
+            </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">سینا کمالی</span>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+                افت تراز ۴۸۰ نمره‌ای در دو آزمون متوالی ژنتیک
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1.5 bg-surface-container-highest hover:bg-surface-bright rounded-lg font-label-sm text-label-sm text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+              پیام به اولیا
+            </button>
+<button class="px-space-sm py-1.5 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg font-label-sm text-label-sm font-semibold transition-colors">
+              کوییز انفرادی
+            </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-sm">
+              م.ص
+            </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">مهسا صادقی‌فر</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history_toggle_off</span>
+                شکست زنجیره مطالعه (عدم ارسال تکلیف ۳ روز پیاپی)
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1.5 bg-surface-container-highest hover:bg-surface-bright rounded-lg font-label-sm text-label-sm text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+              پیام به اولیا
+            </button>
+<button class="px-space-sm py-1.5 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg font-label-sm text-label-sm font-semibold transition-colors">
+              یادآوری پیامکی
+            </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-sm">
+              ع.ن
+            </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">علی نجفی</span>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+                عدم پاسخ به سوالات دام‌دار گیاهی (درصد منفی ۱۲٪)
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<button class="px-space-sm py-1.5 bg-surface-container-highest hover:bg-surface-bright rounded-lg font-label-sm text-label-sm text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+              پیام به اولیا
+            </button>
+<button class="px-space-sm py-1.5 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg font-label-sm text-label-sm font-semibold transition-colors">
+              پکیج جبرانی
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Achievers & Breakthroughs (5 Columns) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">بزرگ‌ترین جهش‌های تحصیلی هفته</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رشد فوق‌العاده در پاسخ‌دهی آزمون‌ها</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">تاپ ۵ رنکینگ</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm font-extrabold text-primary w-5 text-center">۰۱</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">الناز رادمنش</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">کلاس کنکور ۱ - زیست دوازدهم</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-code-sm text-code-sm text-primary font-bold">+۶۵۰ تراز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز جدید: ۷,۴۲۰</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm font-extrabold text-primary w-5 text-center">۰۲</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">امیرحسین باقری</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">کلاس المپیاد زیست شناسی</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-code-sm text-code-sm text-primary font-bold">+۵۱۰ تراز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز جدید: ۷,۱۹۰</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm font-extrabold text-primary w-5 text-center">۰۳</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">نگار شمس</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">کلاس کنکور ۲ - گروه تجربی</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex flex-col items-end">
+<span class="font-code-sm text-code-sm text-primary font-bold">+۴۲۰ تراز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز جدید: ۶,۹۸۰</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-primary-container/10 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-primary font-semibold">اعطای نشان افتخار کلاسی خودکار</span>
+<button class="px-space-md py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:brightness-105 transition-colors">
+          تایید مدال‌ها
+        </button>
+</div>
+</div>
+</div>
+<!-- Weekly Quiz Calendar & Action Workflow -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Weekly Schedule (8 Columns) -->
+<div class="xl:col-span-8 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">برنامه زمان‌بندی آزمون‌ها و مهلت‌های جهشی</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تقویم رویدادهای ارزیابی هفته جاری (اسفند ۱۴۰۳)</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl">
+<button class="px- space-xs px-2.5 py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold">هفته جاری</button>
+<button class="px- space-xs px-2.5 py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">هفته بعد</button>
+</div>
+</div>
+<!-- Schedule Table Structure -->
+<div class="overflow-x-auto">
+<table class="w-full text-right">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-space-sm px-space-md rounded-r-xl">عنوان آزمون و سرفصل</th>
+<th class="py-space-sm px-space-md">کلاس هدف</th>
+<th class="py-space-sm px-space-md">موعد و زمان</th>
+<th class="py-space-sm px-space-md">تعداد سوالات</th>
+<th class="py-space-sm px-space-md rounded-l-xl">وضعیت</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">آزمون جامع گیاهی (فوتوسنتز و انتقال)</span>
+<span class="font-body-sm text-on-surface-variant">تستی - ۴ گزینه‌ای استاندارد</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">دوازدهم تجربی - کل پایه‌ها</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">چهارشنبه ۱۹ اسفند - ساعت ۱۷:۰۰</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">۳۰ تست (۴۵ دقیقه)</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  در انتظار شروع
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">کوییز ۱۰ دقیقه‌ای ژنتیک جمعیت</span>
+<span class="font-body-sm text-on-surface-variant">کوتاه‌پاسخ و محاسباتی</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">تیزهوشان - گروه الف</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-primary">هم‌اکنون فعال (پایان ۲۰:۰۰)</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">۱۰ تست (۱۵ دقیقه)</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary/20 text-primary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  در حال اجرا
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">شبیه‌ساز کنکور سراسری نوبت اول</span>
+<span class="font-body-sm text-on-surface-variant">آزمون جامع با نمره منفی</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">تمامی داوطلبان کنکور</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">جمعه ۲۲ اسفند - ساعت ۰۸:۰۰</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">۴۵ تست (۵۰ دقیقه)</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant">
+                  آماده‌سازی مخزن
+                </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface block">آزمونک شبانه فصل تنفس یاخته‌ای</span>
+<span class="font-body-sm text-on-surface-variant">بررسی اشکالات متداول</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface">پایه دهم و یازدهم</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">دیروز - تکمیل شد</td>
+<td class="py-space-md px-space-md font-code-sm text-code-sm text-on-surface">۱۵ تست</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+                  کارنامه صادر شد
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Quick Operations & Batch Tools (4 Columns) -->
+<div class="xl:col-span-4 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">ابزارهای مدیریتی سریع</h3>
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Action 1 -->
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ایجاد کوییز جدید</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">از روی بانک تست یا هوش مصنوعی</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface">arrow_back</span>
+</button>
+<!-- Action 2 -->
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-title-md text-title-md text-on-surface font-semibold">خروجی اکسل کارنامه‌ها</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تحلیل تفکیکی برای شورای معلمان</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface">arrow_back</span>
+</button>
+<!-- Action 3 -->
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-title-md text-title-md text-on-surface font-semibold">ارسال پیامک گروهی به اولیا</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">گزارش هفتگی افت و رشد تراز</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface">arrow_back</span>
+</button>
+<!-- Action 4 -->
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-on-surface flex items-center justify-center group-hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[20px]">live_tv</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-title-md text-title-md text-on-surface font-semibold">پخش زنده تابلوی اعلانات</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">نمایش رنکینگ در تلویزیون مدرسه</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface">arrow_back</span>
+</button>
+</div>
+<!-- Server Sync Status Footer -->
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          آخرین همگام‌سازی نمرات: ۳ دقیقه قبل
+        </span>
+<button class="text-primary hover:underline font-semibold">همگام‌سازی دستی</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple duel timer simulation
+  (function() {
+    let timeLeft = 24;
+    const timerEl = document.getElementById('duel-countdown');
+    if (timerEl) {
+      setInterval(() => {
+        if (timeLeft > 0) {
+          timeLeft--;
+          const secondsStr = timeLeft < 10 ? '۰' + timeLeft : timeLeft.toString().replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+          timerEl.textContent = '۰۰:' + (timeLeft < 10 ? '۰' + timeLeft : timeLeft);
+        } else {
+          timeLeft = 30;
+          timerEl.textContent = '۰۰:۳۰';
+        }
+      }, 1000);
+    }
+  })();
+</script></main></div><script src="shared.js" defer></script>
+</body></html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Yekan Bakh','Vazirmatn','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#00422b","surface":"#0f131c","on-secondary-fixed":"#07006c","on-secondary-container":"#b0b2ff","secondary-fixed":"#e1e0ff","outline":"#86948a","inverse-primary":"#006c49","surface-container-low":"#181c24","on-tertiary":"#00344d","surface-container":"#1c2028","error":"#ffb4ab","primary-fixed-dim":"#4edea3","on-background":"#dfe2ee","error-container":"#93000a","on-error":"#690005","primary":"#4edea3","on-tertiary-container":"#003d59","tertiary-fixed":"#c9e6ff","tertiary-container":"#23acf1","surface-dim":"#0f131c","on-error-container":"#ffdad6","primary-fixed":"#6ffbbe","primary-container":"#10b981","surface-variant":"#31353e","inverse-surface":"#dfe2ee","surface-tint":"#4edea3","on-surface-variant":"#bbcabf","surface-container-lowest":"#0a0e16","on-tertiary-fixed-variant":"#004c6e","on-secondary":"#1000a9","tertiary":"#89ceff","inverse-on-surface":"#2c3039","secondary-container":"#3131c0","surface-container-high":"#262a33","tertiary-fixed-dim":"#89ceff","on-surface":"#dfe2ee","secondary-fixed-dim":"#c0c1ff","outline-variant":"#3c4a42","surface-container-highest":"#31353e","on-primary-fixed":"#002113","surface-bright":"#353942","on-secondary-fixed-variant":"#2f2ebe","on-primary":"#003824","secondary":"#c0c1ff","on-primary-fixed-variant":"#005236","background":"#0f131c","on-tertiary-fixed":"#001e2f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","margin":"2rem","gutter":"1.25rem","space-xs":"0.25rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-lg":"1.5rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"display-lg":["40px",{"lineHeight":"52px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}]}}}};</script><link rel="stylesheet" href="shared.css"/>
+</head><body class="bg-surface text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-lg"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[24px]">school</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold">مسترورس</span><span class="font-label-sm text-label-sm text-primary">پورتال اساتید و دبیران</span></div></div><div class="px-space-md"><div class="bg-surface-container px-space-md py-space-sm rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">سرور تهران / زنده</span></div><span class="font-code-sm text-code-sm text-primary">۱۴۰۴</span></div></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-xl"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard-live-pulse" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">داشبورد و دیده‌بان زنده</span></div><span class="font-label-sm text-label-sm bg-surface-container px-space-xs rounded text-primary">Live</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-xl" data-path="classes-study-groups" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md">کلاس‌ها و گروه‌ها</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="question-bank-quiz-studio" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">بانک سوال و آزمون‌ساز</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="students-ranks" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">دانش‌آموزان و رتبه‌بندی</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="classroom-duels-leagues" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">swords</span><span class="font-body-md text-body-md">لیگ‌ها و دوئل‌های کلاسی</span></div><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs rounded">رقابتی</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics-gradebook" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">تحلیل عملکرد و کارنامه</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portal-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">تنظیمات و دسترسی‌ها</span></a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">دکتر شایان پارسا</span><span class="font-label-sm text-label-sm text-on-surface-variant">زیست کنکور</span></div></div><button class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md w-1/3"><div class="relative w-full"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant pr-9 pl-3 py-1.5 rounded-xl font-body-sm text-body-sm focus:outline-none" placeholder="جستجوی سریع درس، سوال، آزمون یا نام دانش‌آموز..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl"><button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-semibold transition-colors">تجربی</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors">ریاضی</button><button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors">انسانی</button></div><div class="flex items-center gap-space-sm"><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full"></span></button><button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">campaign</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-gutter bg-surface"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Command & Filter Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold tracking-wide">مدیریت آکادمیک</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">ترم پاییز و زمستان ۱۴۰۳ - ۱۴۰۴</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">کلاس‌ها و گروه‌های درسی زیست‌شناسی</h1>
+<span class="font-body-sm text-body-sm text-primary font-semibold">۴ کلاس فعال • ۲۳۸ دانش‌آموز</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[220px]">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">filter_alt</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant pr-9 pl-3 py-2 rounded-xl font-body-sm text-body-sm focus:outline-none" id="classSearchInput" placeholder="فیلتر نام کلاس یا شعبه..." type="text"/>
+</div>
+<div class="flex items-center bg-surface-container p-1 rounded-xl gap-space-xs">
+<button class="filter-grade-btn active px-space-sm py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-semibold transition-all" data-grade="all">همه پایه‌ها</button>
+<button class="filter-grade-btn px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-grade="12">دوازدهم کنکور</button>
+<button class="filter-grade-btn px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-grade="11">پایه یازدهم</button>
+<button class="filter-grade-btn px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-grade="10">پایه دهم</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-bold shadow-md hover:opacity-90 active:scale-95 transition-all" id="btnCreateClass">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>ایجاد کلاس جدید</span>
+</button>
+</div>
+</div>
+<!-- KPI Overview Micro-Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">میانگین کل تراز کنکور</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">۷,۰۸۵</span>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+۲.۴٪ بهبود نسبت به ماه قبل</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">کل سرفصل‌های تدریس شده</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">۷۴.۵٪</span>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>مطابق بودجه‌بندی قلم‌چی</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">تکالیف چشم‌انتظار بررسی</span>
+<span class="font-headline-md text-headline-md text-secondary-fixed font-bold tracking-tight">۱۴ مورد</span>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">assignment_late</span>
+<span>نیازمند بازخورد تشریحی استاد</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[26px]">rate_review</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">استریک یادگیری روزانه</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">۱۲.۶ روز</span>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span>۹۱٪ نرخ تعهد پیوسته</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[26px]">bolt</span>
+</div>
+</div>
+</div>
+<!-- Main Grid: Class Cards (8 cols) + Real-time Insight Sidebar (4 cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Class Cards Matrix (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Card 1: علامه حلی ۱ (دوازدهم جامع) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all hover:bg-surface-container relative overflow-hidden group" data-card-grade="12">
+<div class="absolute top-0 right-0 left-0 h-1 bg-gradient-to-r from-primary via-tertiary to-primary-container"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up modern biology classroom laboratory with students analyzing microscope samples under cool neon lighting in Tehran school" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD7eWZKD2Lt2vgMg42H8zCJBV6Y11oDUkbDhKeYqQsPF7IKqSU53WPrro-rbmDwYdNL5nTuWsJq6wxm607oPNfWLIf4rRb72BaXOzBQ5crGIsZzDxPGEvieVZIti2VBYvjd2orVW32jbNvlY3H3YOd1FJPqEH8ZktoJj7-Evibm4SGwdW35XAqluE_hy3M8_52Ty_6-B9dAsqhmVBtU6mS2TZLizAsd22SbOAk---h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-code-sm text-code-sm text-primary font-bold">BIO-12</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">زیست‌شناسی جامع کنکور تیر</h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">شعبه ۱ علامه‌حلی</span>
+<span class="px-space-xs py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">emoji_events</span>
+                    رتبه ۱ لیگ استانی
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">جمع‌بندی دهم و یازدهم + پیشروی فصول ۲ تا ۵ دوازدهم با تست‌های سنجش</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-end gap-space-xs shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز میانگین:</span>
+<span class="font-title-md text-title-md text-primary font-bold">۷,۱۴۰</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">کد کلاس: <span class="text-on-surface font-semibold">HL1-BIO-902</span></span>
+</div>
+</div>
+<!-- Progress Bar & Milestone Info -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">task_alt</span>
+                پیشرفت تدریس سرفصل‌های دوازدهم
+              </span>
+<span class="text-primary font-bold font-code-sm">۷۸٪ (سرفصل ۶ از ۸)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 78%"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span>مبحث بعدی: تقسیم یاخته‌ای و جهش‌های کروموزومی</span>
+<span class="text-on-surface-variant">جلسه ۲۴ از ۳۰</span>
+</div>
+</div>
+<!-- Bottom Meta & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">groups</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">۵۶ دانش‌آموز</span>
+</div>
+<!-- Assistant Avatar & Name -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full">
+<div class="w-6 h-6 rounded-full overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male Iranian teaching assistant with glasses and smiling confident academic attitude" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7780fkBAgFp6ncZMDg89NUnE0MVGa0RVwclQC88b03gB64F8SRPVMoLa55KUhE-pWKuCE5I8wiCSNfRMcRkMDl_sZslJ8JA_q5pTEN4xK4IcMxZICE4yS_jAs4_woNmKgUw7H-d2hOv7CeOzXHU5MSGbGgvfmql2GZuJ-vkKOB81zFYfEI-griZFjD8TQa4V9AvyfJkbKR70mhLsEBOd5EHdIZ87L9h1onRnbH0KJ"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">همیار: علیرضا نجفی</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>تکلیف جاری: آزمون تشریحی فصل ۵ (پایان مهلت: امروز ۲۴:۰۰)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-invite-btn px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs" data-invite="https://masterverse.ir/c/HL1-BIO-902">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>لینک دعوت</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">assignment</span>
+<span>تنظیم تکالیف</span>
+</button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold hover:opacity-95 transition-opacity flex items-center gap-space-xs">
+<span>ورود به پنل کلاس</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: فرزانگان تهران (ژنتیک و بیوشیمی نخبگان) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all hover:bg-surface-container relative overflow-hidden group" data-card-grade="12">
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="High tech biotechnology educational workspace with DNA helix double structure projected over a modern student study desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbk3qvfjTJVVFhL0waLiSeF0FX0JUiUb1r1GFStl93akpGA4eFuL4DK_KYGOtn0nUbfW3QIAsBL4WVu6JIAKr32iHQqCGiL88LAGVI3ADmKTgQwEJ0hxvE59dj-maQWraDlzsV-WxBPwMevanOvaIKUAb1ODfSlleEGkmv9kza-DPDWMNjbQJaiYXezrJyvkS2fLFNhqth5yj-f-JG02GQ_SjKwkcRISD7SiUznRRm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="font-code-sm text-code-sm text-tertiary font-bold absolute bottom-1 right-1">GEN-OLY</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">ژنتیک مولکولی و بیوشیمی پیشرفته</h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">فرزانگان ۱ تهران</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    دسته المپیاد و تیزهوشان
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">حل مسائل پیشرفته دودمانه، مهندسی بافت و تکنیک‌های سنتز پروتئین</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-end gap-space-xs shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">نرخ حل تست:</span>
+<span class="font-title-md text-title-md text-tertiary font-bold">۹۶.۲٪</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">کد کلاس: <span class="text-on-surface font-semibold">FRZ-GEN-304</span></span>
+</div>
+</div>
+<!-- Progress Bar & Milestone Info -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">task_alt</span>
+                سرفصل‌های کارگاه حل مسئله ژنتیک
+              </span>
+<span class="text-tertiary font-bold font-code-sm">۸۵٪ (پایان پودمان ۲)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 85%"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span>استریک میانگین مطالعاتی اعضا: ۱۴ روز مداوم</span>
+<span class="text-on-surface-variant">۳۴ آزمونک تخصصی ثبت‌شده</span>
+</div>
+</div>
+<!-- Bottom Meta & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">groups</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">۴۸ دانش‌آموز</span>
+</div>
+<!-- Assistant Avatar -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full">
+<div class="w-6 h-6 rounded-full overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of a focused Iranian female academic teacher assistant wearing medical lab coat with warm welcoming expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDstGi5WTweV3t8J4D8YTlFQmjERO7aJ0RlcM4QeRLP7hCP_x1KvdPoNdrgr0t73d7gars6XAlZkMZyTtb0AX8kPLYfsXyohhZYHjwq3ZOuD3tEutZDo9v8QRYH_n9Pw8GCIajzKl9ErAROl0OERcGITlo8ERgQIcoVcGbNHl6a98oGJiLXNf29Dkp6p4Eh0ljaqgmRLwF-CqZJ6fnquZEkxEUrqBz29et71n58blU7"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">همیار: سارا مهرآیین</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>تکلیف فعال: تحلیل ۵۰ تست دشوار کانون</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-invite-btn px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs" data-invite="https://masterverse.ir/c/FRZ-GEN-304">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>لینک دعوت</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>تنظیم تکالیف</span>
+</button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold hover:opacity-95 transition-opacity flex items-center gap-space-xs">
+<span>ورود به پنل کلاس</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: آموزشگاه هدف (تست‌زنی سرعتی شتاب) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all hover:bg-surface-container relative overflow-hidden group" data-card-grade="12">
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="High energy classroom seminar hall with digital screens glowing showing biology stopwatch test metrics and students taking timed quiz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYihrm3UrmTHERQqLfZcXwc3oIpg2lzoh29dx2b-ywnj9qosCaWpGD9Kgmu52Z4rVrAnojp76yYtZjsBYE54GxjdqfjHXu2tBUQbkIWXBbIwF_cR6m-ncc6I8OIGWjYASG-f2IlvlDTflF4uB5cqZQgzvjJpmYlRrzIiYtoDouKBVkeXTxmLpxLl-SDmBUe2vAsGHri_dV9lJ3zI7cvm0yLoaS5UdXKvlwKuhvtxwr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="font-code-sm text-code-sm text-secondary-fixed font-bold absolute bottom-1 right-1">FAST-TEST</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">تست‌زنی سرعتی شتاب و تحلیل دام‌ها</h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">آموزشگاه هدف</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                    در حال برگزاری کوییز زنده مبحثی
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">تکنیک‌های خوانش سریع صورت سوال، دام‌های طراحان کنکور ۹۸ تا ۱۴۰۳</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-end gap-space-xs shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز میانگین:</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">۶,۶۹۰</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">کد کلاس: <span class="text-on-surface font-semibold">HDF-SPD-118</span></span>
+</div>
+</div>
+<!-- Progress Bar & Milestone Info -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+                کوییز زنده: گوارش و تبادلات گازی (۴۵ ثانیه برای هر سوال)
+              </span>
+<span class="text-secondary-fixed font-bold font-code-sm">۵۸ نفر در آزمون</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full transition-all duration-500" style="width: 62%"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span>زمان باقی‌مانده آزمون: ۱۳ دقیقه و ۲۰ ثانیه</span>
+<span class="text-primary font-medium">سرفصل کل دوره: ۶۲٪</span>
+</div>
+</div>
+<!-- Bottom Meta & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">groups</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">۷۲ دانش‌آموز</span>
+</div>
+<!-- Assistant Avatar -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full">
+<div class="w-6 h-6 rounded-full overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian male university student assistant in science faculty looking sharp and ready" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj-kPaWGdihFXpjYOerrmUSgoedAhROqPcfz_7s51zwO5zwbw5vnAkvpt3GYTjXze9ZeDnLJMLIakQ5Wr9WkfRF71VhrMgXJ8VMpSX0EB3nnBa-lIuOy4yQkJo1Kv5W6uW4YBkYdRVOfl-ZL89ntz_HidVb2STzUycrATq2xh25VDAvE_9XQLO0lw5UPh0l0vLS5DfHwrJGzfNERey7aiY_rU1UpbH5JnBD98DWfDV"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">همیار: رضا برومند</span>
+</div>
+<div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>۸ کارنامه اصلاح‌نشده</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-invite-btn px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs" data-invite="https://masterverse.ir/c/HDF-SPD-118">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>لینک دعوت</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">assignment</span>
+<span>تنظیم تکالیف</span>
+</button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold hover:opacity-95 transition-opacity flex items-center gap-space-xs">
+<span>مانیتورینگ زنده</span>
+<span class="material-symbols-outlined text-[18px]">live_tv</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: پایه یازدهم (گروه الف) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md transition-all hover:bg-surface-container relative overflow-hidden group" data-card-grade="11">
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Vibrant high school biological science classroom with human anatomy 3D torso model and diagrams in clean futuristic studio style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWvqSqo0Fxxj5Mo452JxbwhGhUe486oo54ugIahcPpGfmWKDfGZ8sRiAYB9FUMsp6VCQU2M5ni_-gcQZOAsDKKYib-DPbQ7xWXxdFBNFXsAYfDwvwcQLewdsx_EEHzfQua_umgA_ROsvS_HSjM1b71tp_GpyBiJBDOLPPwAcT9JCaBlRhjwbebkpX2-9ASDcIGw__oPKL0f5_PmGNXYA8m41pcHFGUjJ0H6w2weANp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<span class="font-code-sm text-code-sm text-primary font-bold absolute bottom-1 right-1">BIO-11A</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">زیست‌شناسی پایه یازدهم (گروه الف)</h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">دبیرستان رشد</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">پایه یازدهم</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">دستگاه عصبی، حواس، ترشحات شیمیایی و دستگاه حرکتی با تأکید بر تست مفهومی</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-end gap-space-xs shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تراز میانگین:</span>
+<span class="font-title-md text-title-md text-primary font-bold">۶,۸۲۰</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">کد کلاس: <span class="text-on-surface font-semibold">RSH-11A-440</span></span>
+</div>
+</div>
+<!-- Progress Bar & Milestone Info -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">task_alt</span>
+                سرفصل‌های نیمسال اول یازدهم
+              </span>
+<span class="text-primary font-bold font-code-sm">۷۱٪ (فصل ۴: تنظیم شیمیایی)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 71%"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span>جلسه بعدی: دوشنبه ساعت ۱۶:۳۰ (رفع اشکال هورمون‌ها)</span>
+<span class="text-on-surface-variant">تکمیل ۶ فصل تا اسفند</span>
+</div>
+</div>
+<!-- Bottom Meta & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-lg flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">groups</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">۶۲ دانش‌آموز</span>
+</div>
+<!-- Assistant Avatar -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full">
+<div class="w-6 h-6 rounded-full overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian young female biological science educator in tidy headscarf looking directly at camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3swAk3IgcPgR45oRcOmDygBGedtQzuNTiX9jU77R27CHy927z93nj5Ec_U4khOldZ30DztRc7l3F2DHazI-dY0G3EPfM3LRB8h6JP3qCYu8C71_OTQIRdsLvYL3cBr6T0fvKjeBMAZMe2N_PyQjhnsUHw42em5lIrs42u3dZDHfwz7RpbZNRecPPNtBDG10kDgtPIoI7WUopDluwyCguJ3JoB9AppOEO43vxqk18U"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">همیار: مونا دانش‌پور</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">quiz</span>
+<span>تکلیف: رسم نقشه ذهنی غدد درون‌ریز</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="copy-invite-btn px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs" data-invite="https://masterverse.ir/c/RSH-11A-440">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>لینک دعوت</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">assignment</span>
+<span>تنظیم تکالیف</span>
+</button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold hover:opacity-95 transition-opacity flex items-center gap-space-xs">
+<span>ورود به پنل کلاس</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Analytics & Inspection Panel (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Chart Module: Class Score Comparison -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">bar_chart</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">مقایسه تراز میانگین کلاس‌ها</h3>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">آزمون جامع ۲ آذر</span>
+</div>
+<!-- Inline SVG Comparative Bar Chart -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Item 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">علامه‌حلی ۱ (دوازدهم)</span>
+<span class="font-code-sm text-primary font-bold">۷,۱۴۰</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">فرزانگان (ژنتیک)</span>
+<span class="font-code-sm text-tertiary font-bold">۶,۹۹۰</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 91%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">رشد (یازدهم الف)</span>
+<span class="font-code-sm text-on-surface-variant font-bold">۶,۸۲۰</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-on-surface-variant rounded-full" style="width: 86%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">هدف (تست‌زنی سرعتی)</span>
+<span class="font-code-sm text-secondary-fixed font-bold">۶,۶۹۰</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 81%"></div>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">اختلاف تراز صدر و ذیل:</span>
+<span class="font-code-sm text-primary font-bold">۴۵۰ نمره تراز</span>
+</div>
+</div>
+<!-- Peak Study Hours Heatmap & Sparkline -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">pace</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">ساعات اوج تمرین و تست‌زنی</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">۲۴ ساعت گذشته</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تمرکز فعالیت حل تست دانش‌آموزان در ساعات پایانی شب (بین ۲۱:۰۰ تا ۲۳:۳۰) به اوج می‌رسد.</p>
+<!-- Inline SVG Activity Distribution Sparkline Curve -->
+<div class="w-full bg-surface-container p-space-sm rounded-xl">
+<svg class="w-full h-24 overflow-visible" preserveaspectratio="none" viewbox="0 0 320 90">
+<defs>
+<lineargradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4edea3" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#4edea3" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Background Area Fill -->
+<path d="M 0,80 Q 40,75 80,68 T 160,50 T 220,18 T 270,12 T 320,55 L 320,90 L 0,90 Z" fill="url(#chartGradient)"></path>
+<!-- Line Stroke -->
+<path d="M 0,80 Q 40,75 80,68 T 160,50 T 220,18 T 270,12 T 320,55" fill="none" stroke="#4edea3" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Peak Indicator Point -->
+<circle class="animate-ping" cx="270" cy="12" fill="#4edea3" r="4"></circle>
+<circle cx="270" cy="12" fill="#0f131c" r="3.5" stroke="#4edea3" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between items-center text-[10px] font-code-sm text-on-surface-variant mt-2 px-1">
+<span>۰۶:۰۰</span>
+<span>۱۲:۰۰</span>
+<span>۱۸:۰۰</span>
+<span class="text-primary font-bold">۲۲:۰۰ (پیک فعالیت)</span>
+<span>۲۴:۰۰</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تست‌های حل‌شده دیشب</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold font-code-sm">۳,۴۲۰</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">میانگین دقت حل تست</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold font-code-sm">۷۸.۴٪</span>
+</div>
+</div>
+</div>
+<!-- Actionable Queue: Unreviewed Homework Submissions -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">pending_actions</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">تکالیف بررسی‌نشده استاد</h3>
+</div>
+<span class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">۱۴ مورد</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Task 1 -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">پاسخنامه تشریحی دودمانه ژنتیک</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فرزانگان • ۶ دانش‌آموز برتر</span>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-highest text-on-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors">
+              تصحیح
+            </button>
+</div>
+<!-- Task 2 -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">تحلیل تست‌های شکل‌شناسی حشرات</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">علامه‌حلی ۱ • ۵ فایل ارسالی</span>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-highest text-on-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors">
+              تصحیح
+            </button>
+</div>
+<!-- Task 3 -->
+<div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">خلاصه‌نویسی نموداری هورمون‌ها</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رشد یازدهم • ۳ گزارش باقی‌مانده</span>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-highest text-on-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors">
+              تصحیح
+            </button>
+</div>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high text-center font-label-md text-label-md transition-colors font-medium">
+          مشاهده همه تکالیف و صف تصحیح دسته‌جمعی
+        </button>
+</div>
+</div>
+</div>
+<!-- Create New Class Modal Backdrop -->
+<div class="fixed inset-0 bg-surface-dim/80 backdrop-blur-md z-50 hidden items-center justify-center p-space-md" id="createClassModal">
+<div class="bg-surface-container-low max-w-lg w-full rounded-xl p-space-lg shadow-[0_16px_32px_-8px_rgba(0,0,0,0.65)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">تعریف کلاس و گروه درسی جدید</h2>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" id="btnCloseModal">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">مشخصات کلاس جدید را وارد کنید. پس از ثبت، کد اختصاصی دعوت و پنل تمرینات صادر می‌گردد.</p>
+<form class="flex flex-col gap-space-md" id="newClassForm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">عنوان کلاس</label>
+<input class="bg-surface-container text-on-surface placeholder:text-on-surface-variant p-2 rounded-xl font-body-md text-body-md focus:outline-none" placeholder="مثال: زیست‌شناسی جامع تیزهوشان تبریز" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">پایه تحصیلی</label>
+<select class="bg-surface-container text-on-surface p-2 rounded-xl font-body-md text-body-md focus:outline-none">
+<option value="12">دوازدهم (کنکور)</option>
+<option value="11">پایه یازدهم</option>
+<option value="10">پایه دهم</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">شعبه یا آموزشگاه</label>
+<input class="bg-surface-container text-on-surface placeholder:text-on-surface-variant p-2 rounded-xl font-body-md text-body-md focus:outline-none" placeholder="مثال: علامه‌حلی مرکزی" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">ظرفیت پیش‌بینی شده</label>
+<input class="bg-surface-container text-on-surface p-2 rounded-xl font-body-md text-body-md focus:outline-none font-code-sm" max="150" min="5" type="number" value="50"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">دستیار / همیار کلاس</label>
+<select class="bg-surface-container text-on-surface p-2 rounded-xl font-body-md text-body-md focus:outline-none">
+<option>علیرضا نجفی</option>
+<option>سارا مهرآیین</option>
+<option>رضا برومند</option>
+<option>مونا دانش‌پور</option>
+<option>بدون دستیار (شخصی)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" id="btnCancelModal" type="button">انصراف</button>
+<button class="px-space-lg py-2 rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold hover:opacity-90 transition-opacity" type="submit">تأیید و ساخت کلاس</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Element -->
+<div class="fixed bottom-6 left-6 z-50 bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-xs font-label-md text-label-md transform translate-y-24 opacity-0 transition-all duration-300" id="toastMessage">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="toastText">لینک کلاسی کپی شد!</span>
+</div>
+</div>
+<script>
+  // Filter by Grade Functionality
+  const filterGradeButtons = document.querySelectorAll('.filter-grade-btn');
+  const classCards = document.querySelectorAll('[data-card-grade]');
+  const searchInput = document.getElementById('classSearchInput');
+
+  filterGradeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterGradeButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'active');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'active');
+      btn.classList.remove('text-on-surface-variant');
+
+      const selectedGrade = btn.getAttribute('data-grade');
+      applyFilters(selectedGrade, searchInput.value);
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    const activeBtn = document.querySelector('.filter-grade-btn.active');
+    const selectedGrade = activeBtn ? activeBtn.getAttribute('data-grade') : 'all';
+    applyFilters(selectedGrade, e.target.value);
+  });
+
+  function applyFilters(grade, searchText) {
+    const searchLower = searchText.trim().toLowerCase();
+    classCards.forEach(card => {
+      const cardGrade = card.getAttribute('data-card-grade');
+      const cardText = card.textContent.toLowerCase();
+
+      const matchGrade = (grade === 'all' || cardGrade === grade);
+      const matchSearch = (!searchText || cardText.includes(searchLower));
+
+      if (matchGrade && matchSearch) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Toast Functionality
+  const toast = document.getElementById('toastMessage');
+  const toastText = document.getElementById('toastText');
+
+  function showToast(message) {
+    toastText.textContent = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  // Copy Class Invitation Links
+  document.querySelectorAll('.copy-invite-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const inviteUrl = btn.getAttribute('data-invite');
+      navigator.clipboard.writeText(inviteUrl).then(() => {
+        showToast('لینک دعوت اختصاصی کلاس در حافظه کپی شد');
+      }).catch(() => {
+        showToast('لینک کلاس: ' + inviteUrl);
+      });
+    });
+  });
+
+  // Modal Open/Close Management
+  const modal = document.getElementById('createClassModal');
+  const btnCreateClass = document.getElementById('btnCreateClass');
+  const btnCloseModal = document.getElementById('btnCloseModal');
+  const btnCancelModal = document.getElementById('btnCancelModal');
+  const newClassForm = document.getElementById('newClassForm');
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  btnCreateClass.addEventListener('click', openModal);
+  btnCloseModal.addEventListener('click', closeModal);
+  btnCancelModal.addEventListener('click', closeModal);
+
+  newClassForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    closeModal();
+    showToast('کلاس جدید با موفقیت ساخته شد و در دیتابیس ثبت گردید.');
+    newClassForm.reset();
+  });
+</script></main></div><script src="shared.js" defer></script>
+</body></html>

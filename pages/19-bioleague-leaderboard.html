@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;}body{overscroll-behavior:none;direction:rtl;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed-dim": "#b4c5ff", "primary-fixed": "#dae2fd", "inverse-primary": "#bec6e0", "on-surface": "#0b1c30", "tertiary": "#000000", "surface-tint": "#565e74", "on-primary-container": "#7c839b", "surface-variant": "#d3e4fe", "tertiary-container": "#002114", "surface-bright": "#f8f9ff", "on-tertiary-fixed-variant": "#005137", "on-tertiary-container": "#069669", "outline": "#76777d", "tertiary-fixed-dim": "#68dba9", "on-tertiary-fixed": "#002114", "primary-fixed-dim": "#bec6e0", "inverse-surface": "#213145", "outline-variant": "#c6c6cd", "on-primary": "#ffffff", "on-error": "#ffffff", "error-container": "#ffdad6", "secondary": "#0051d5", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#003ea8", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-error-container": "#93000a", "surface-container": "#e5eeff", "tertiary-fixed": "#85f8c4", "secondary-container": "#316bf3", "surface": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "primary-container": "#131b2e", "secondary-fixed": "#dbe1ff", "on-primary-fixed-variant": "#3f465c", "on-secondary-fixed": "#00174b", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "on-secondary-container": "#fefcff", "primary": "#000000", "on-surface-variant": "#45464d", "error": "#ba1a1a", "background": "#f8f9ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "gutter": "1rem", "margin": "2rem", "space-xl": "2.25rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "numeral-counter": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["22px", { "lineHeight": "32px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "26px", "fontWeight": "600" }], "numeral-counter": ["20px", { "lineHeight": "24px", "fontWeight": "800" }], "display-hero-mobile": ["32px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "display-hero": ["44px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "44px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "18px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link rel="stylesheet" href="shared.css"/>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">زیست‌ورز کنکور</span><span class="font-title-md text-title-md text-on-surface leading-snug">League Leaderboard</span></div></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="material-symbols-outlined text-error text-[16px]">local_fire_department</span><span class="font-label-md text-label-md text-on-surface tabular-nums">۱۴</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-primary-container rounded-full text-on-primary"><span class="material-symbols-outlined text-secondary-fixed text-[16px]">bolt</span><span class="font-label-md text-label-md tabular-nums">۲,۴۵۰</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-tertiary-container rounded-full text-tertiary-fixed"><span class="material-symbols-outlined text-[16px]">diamond</span><span class="font-label-md text-label-md tabular-nums">۳۸۰</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 px-margin-mobile bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- League Tier Hero Header -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="absolute -top-12 -left-12 w-40 h-40 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-tertiary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">لیگ الماس کنکور تجربی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Diamond League • گروه نخبگان زیست‌شناسی</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded-full text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-error">timer</span>
+<span class="font-label-md text-label-md tabular-nums">۳ روز مانده</span>
+</div>
+</div>
+<!-- Tier Promotion Progress Indicator -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-tertiary-container">منطقه صعود به لیگ افسانه‌ای نخبگان</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">رتبه ۲۴ از ۱,۴۵۰</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-on-tertiary-container h-full rounded-full transition-all duration-500" style="width: 78%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span>صعود: رتبه‌های ۱ تا ۵۰</span>
+<span class="text-on-tertiary-container font-label-md text-label-md">جایزه: ۳۵۰ تراز + مدال طلا</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Time Horizon Tabs -->
+<div class="flex items-center bg-surface-container p-1 rounded-xl gap-1">
+<button class="flex-1 py-2 text-center rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all" id="tab-weekly">
+      هفتگی (لیگ جاری)
+    </button>
+<button class="flex-1 py-2 text-center rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="tab-monthly">
+      ماهانه
+    </button>
+<button class="flex-1 py-2 text-center rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="tab-national">
+      کل کشور (کنکور ۱۴۰۴)
+    </button>
+</div>
+<!-- Top 3 Podium -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">military_tech</span>
+<span class="font-title-md text-title-md text-on-surface">سکوی برترین‌های کشور</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">به‌روزرسانی: ۲ دقیقه پیش</span>
+</div>
+<!-- Podium Visual Layout -->
+<div class="grid grid-cols-3 gap-space-xs items-end pt-space-md pb-space-xs">
+<!-- Rank 2: Silver (Left in RTL is 2nd) -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="relative">
+<div class="w-16 h-16 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of an intelligent Iranian female high school biology student wearing modern casual student clothes, confident expression, minimalist clean daylight studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgnsEkCf-wH-LZstq1KnadgjHiXpO9d1e4lFyjP0c2t5NLO24Dz_Ak-v6kwbNmOv2B5-Na_fjrNGUNF9pxjWN3mbfIPbQPo0fvs4b8G73z998LP_h_oMOFOBUC6Yh6bhtt4Q3N23k8MzmNR2y5bWcLvZrfHWLePR9rB-pmmlD8yAAX-Bw4ZqFyA67dwooszEhqJZ5_2TMPPdrfyGfx7TALRHbTR7YQDrUGlDtEc4A8"/>
+</div>
+<div class="absolute -bottom-2 -left-1 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-numeral-counter text-[12px] shadow-sm">
+            ۲
+          </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center truncate w-full mt-1">نیلوفر صادقی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اصفهان • فرزانگان ۱</span>
+<div class="w-full bg-surface-container-high rounded-xl p-space-xs flex flex-col items-center mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold tabular-nums">۷,۸۹۰ تراز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۷,۹۲۰ XP</span>
+</div>
+</div>
+<!-- Rank 1: Gold (Center) -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="relative">
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 text-secondary flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="w-20 h-20 rounded-full overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a focused Iranian male top student in pre-medical entrance exam prep, sharp gaze, clean daylight portrait, high clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZIk35WC7znYRXAPYnGcZTxVRWCfMIAaxaHqiZJ35Lus4973PMYC9wpKY8qxFAI8O2d0MYbs_fGI39tTo9LLLU54YzLv8adRgGCPeaFPt1nRgB6OtGlF-WVrZ801GjmKIjHPWDXozJO6kMKh-ykDCbSH7z3RH9TGkukQKxIM87B4aoIjEkVJZgNUEMqYLQevSMDyoLG2Yz8IZ6H501GV7eZNuGs3o03lUNDtY2pA0n"/>
+</div>
+<div class="absolute -bottom-2 -left-1 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-numeral-counter text-label-md shadow-sm">
+            ۱
+          </div>
+</div>
+<span class="font-title-md text-title-md text-on-surface text-center truncate w-full mt-1">پارسا رضایی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تهران • علامه حلی</span>
+<div class="w-full bg-secondary-fixed text-on-secondary-fixed rounded-xl p-space-xs flex flex-col items-center mt-1 shadow-sm">
+<span class="font-label-md text-label-md font-bold tabular-nums text-secondary">۷,۹۸۰ تراز</span>
+<span class="font-label-sm text-label-sm tabular-nums">۸,۴۵۰ XP</span>
+</div>
+</div>
+<!-- Rank 3: Bronze (Right in RTL is 3rd) -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="relative">
+<div class="w-16 h-16 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a studious Iranian male biology enthusiast, smiling calmly, clean composition, natural study room ambient illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA03x8iA_SRqwUflSBBJO2MhiKkJd6SfQ3Nj59yNGFwTbn3gyXUGr9R9Fn-1RDnUPaVWzjdOYw4YKQbIzWxLLzwKCfAQbgy6Ur1L2GhLQWEGtGCFkfPGggDO33ONVROT-_98hP_GBprufRCm2ba6pBgcw6lSg-012kN7lkN3Zc8wU5WF4qNjmiRDLYTawcVwYhpl--UvVeJwC5Jv9r4DUeGP2l30tsCfoGG9zntUeP"/>
+</div>
+<div class="absolute -bottom-2 -left-1 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-numeral-counter text-[12px] shadow-sm">
+            ۳
+          </div>
+</div>
+<span class="font-label-md text-label-md text-on-surface text-center truncate w-full mt-1">علی کریمی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">شیراز • دستغیب</span>
+<div class="w-full bg-surface-container-high rounded-xl p-space-xs flex flex-col items-center mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold tabular-nums">۷,۷۴۰ تراز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۷,۱۰۰ XP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlighted User Card (Current Position) -->
+<div class="rounded-xl bg-primary-container text-on-primary p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 bg-secondary/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-numeral-counter text-numeral-counter shadow-sm">
+            ۲۴
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-primary">آریا رادمنش (شما)</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">زیست‌شناس نقره‌ای</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container">رتبه ۲۴ • منطقه سبز صعود به لیگ نخبگان</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">bolt</span>
+<span class="font-headline-sm text-headline-sm tabular-nums text-on-primary">۴,۸۵۰</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">XP</span>
+</div>
+<span class="font-label-md text-label-md text-secondary-fixed tabular-nums">تراز: ۷,۴۲۰</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-highest/10 px-space-sm py-1.5 rounded-lg mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-primary">تنها ۲ رتبه تا رسیدن به ردیف ممتاز کنکور</span>
+</div>
+<button class="bg-on-tertiary-container hover:bg-on-tertiary-container/90 text-on-primary font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm transition-transform active:scale-95 flex items-center gap-1">
+<span>شروع کوییز سبقت</span>
+<span class="material-symbols-outlined text-[14px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Leaderboard Surrounding Rankings List -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">format_list_numbered_rtl</span>
+<span class="font-title-md text-title-md text-on-surface">جدول هم‌گروهی‌های فعال</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">رتبه‌های ۲۰ تا ۲۶</span>
+</div>
+<!-- Tier Promotion Barrier Line -->
+<div class="flex items-center gap-space-xs py-1">
+<div class="flex-1 h-0.5 bg-on-tertiary-container/30"></div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span class="font-label-sm text-label-sm">مرز صعود به لیگ نخبگان (تا رتبه ۲۵)</span>
+</div>
+<div class="flex-1 h-0.5 bg-on-tertiary-container/30"></div>
+</div>
+<!-- Student Rows -->
+<div class="flex flex-col gap-space-xs">
+<!-- Rank 21 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 text-center font-numeral-counter text-title-md text-on-surface tabular-nums">۲۱</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian high school female student, modern study aesthetics, calm focused expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoYzRj2K-swe8G744P5PAc5bjULZSNnKdz5sXiDoW6Dseb8HQbDGaPaPIxfn6UiJ2L6-2zYbxAfrP4gRVTxWPt14tc89ibFs28ATQD_IrIcfEzSKyX1VgvIMV5yXam_b_B_19bkdV4ETXoXiJybfWq10LURSFWT7cTNUVYBG1IuMDBFXG1-xI5hXwjMsXUEracKyyEz8zwcZP2CfYSLCXBZ4pAzw_T2dQDtCmhCJt8"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">زهرا محمدی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تبریز • فرزانگان</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-secondary font-bold tabular-nums">۷,۴۹۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۵,۱۲۰ XP</span>
+</div>
+</div>
+<!-- Rank 22 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 text-center font-numeral-counter text-title-md text-on-surface tabular-nums">۲۲</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young male student in Iran preparing for national exams, glasses, thoughtful academic look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn1uwCYEeTgQYO6iteyJU38HngFy_LetP_KwZ6hOBU33kL0fvVyFq8T7NyMWK2IehuML-_tc1GIcaPAh2-XMc7yHjzbLwS68xga4gZkjE8ZO_YhHbk3fPP5pCmgZ4G2w75TecZcp0FjrmaC7uDZsNTjCy1wfUgw4dvQRoRi2m2P9RcwL5uRWmG1IckAddhQeVPV3bqb5TP6L6cKFb-KJLIlJa7tX6GxvfLRuF9mSwu"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">محمد امینی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مشهد • هاشمی‌نژاد</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-secondary font-bold tabular-nums">۷,۴۶۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۴,۹۹۰ XP</span>
+</div>
+</div>
+<!-- Rank 23 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 text-center font-numeral-counter text-title-md text-on-surface tabular-nums">۲۳</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian female science student with notebook, warm indoor lighting, modern sharp photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYdBUwzlK98_Q_izgMhpDUQyeS_MwtC9Y46pnfCCDDAndm-4GFIbliQUSayHKlSDRq7Ik830zDIun5Q1_RCDbbIlTIA_VRT5OL459fz6ua1ru0qTD4c86Abuo6T2QSzrWTLx27IjOk4DgjXQivp8GjmWPIEjp5RUFZAXeAH3KtFSUAMHaM2ZuCGGLBVoTbkbJlGEl3Zv7Rc4D7P_OyXLUQR0leDyaZVhK-VrqNSdyA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">سارا کاظمی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کرج • کوثر</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-secondary font-bold tabular-nums">۷,۴۴۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۴,۸۹۰ XP</span>
+</div>
+</div>
+<!-- Rank 24: User (Current Highlighted) -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-numeral-counter text-label-md shadow-sm tabular-nums">
+            ۲۴
+          </div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">face</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-on-secondary-fixed">آریا رادمنش</span>
+<span class="bg-secondary text-on-secondary font-label-sm text-[10px] px-1.5 py-0.2 rounded-full">شما</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">تهران • نمونه دولتی البرز</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-extrabold text-secondary tabular-nums">۷,۴۲۰</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant tabular-nums">۴,۸۵۰ XP</span>
+</div>
+</div>
+<!-- Rank 25 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 text-center font-numeral-counter text-title-md text-on-surface tabular-nums">۲۵</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Iranian high school boy studying medical biology textbooks, soft natural daylight, thoughtful look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs2UJkLpcHmk2HQlNt9uAWtqNqCTgwbeBXYJ_42ArJaXV7kzvhpaggBdNX9sIiLyDLED_WpbCWwFNNvQO1DDiyheAD_oVy_oXVX0UwJUwFKKUdrMo6NWeoAOAxSYPdNm1ZHsWpYTKvQS7IgRvfJXc5K5n4ZYMFXxd_0qdTWs8lleqAum5s-gno7gROPvpcOzH0O_WoCb4iSK2BncbVPRtVM8tjxH-RpeOuexf4B5NZ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">پویا رحیمی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اهواز • طلایه‌داران</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-secondary font-bold tabular-nums">۷,۳۸۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۴,۷۱۰ XP</span>
+</div>
+</div>
+<!-- Tier Demotion/Neutral Divider -->
+<div class="flex items-center gap-space-xs py-1">
+<div class="flex-1 h-0.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">horizontal_rule</span>
+<span class="font-label-sm text-label-sm">منطقه ابقا در لیگ الماس (رتبه‌های ۲۶ تا ۱۰۰)</span>
+</div>
+<div class="flex-1 h-0.5 bg-outline-variant"></div>
+</div>
+<!-- Rank 26 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 text-center font-numeral-counter text-title-md text-on-surface-variant tabular-nums">۲۶</span>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shadow-sm opacity-80">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young female pre-university student in Iran looking focused at exam study notes, crisp minimal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqkJ3D8DyaBf5WSllaqQUu8YVEz38UoGvjZ5o6keDDrzzv3VII7H7xCkr66bJo5uWSN019YGiXPRbljH56gH_OKN-RTaRSlm8VeblDR5voNp-b9W1_EBrQCIPY41hZ4ysUH8DpUt1_cd4wtkKuUuDAXOjZUQQTsz9XyR9rNskpiSIwX7b2KMR4ZSGl9BAYk7h8HvGLyy2nn0vIyNGG3O6IR1Z3H8UKvgr3V2OXxyq6"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface-variant">مهسا تقوی</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">کرمان • فرزانگان</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface-variant tabular-nums">۷,۳۵۰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">۴,۶۸۰ XP</span>
+</div>
+</div>
+</div>
+<!-- Motivational Callout Footer -->
+<div class="mt-space-xs bg-surface-container p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">rocket_launch</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">کسب امتیاز مضاعف در دوئل شبانه</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ساعت ۲۱:۰۰ • ضریب ۲ برابری تراز</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary hover:bg-primary/90 font-label-md text-label-md px-space-sm py-1.5 rounded-lg shadow-sm transition-transform active:scale-95">
+        ثبت‌نام دوئل
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const tabs = [
+      { id: 'tab-weekly', name: 'هفتگی (لیگ جاری)' },
+      { id: 'tab-monthly', name: 'ماهانه' },
+      { id: 'tab-national', name: 'کل کشور (کنکور ۱۴۰۴)' }
+    ];
+
+    tabs.forEach(tab => {
+      const el = document.getElementById(tab.id);
+      if (!el) return;
+      el.addEventListener('click', () => {
+        tabs.forEach(t => {
+          const btn = document.getElementById(t.id);
+          if (btn) {
+            btn.className = "flex-1 py-2 text-center rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+          }
+        });
+        el.className = "flex-1 py-2 text-center rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all";
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-secondary font-label-lg"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">cottage</span><span class="font-label-sm text-label-sm">خانه</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="subjects-chapters" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm">سرفصل‌ها</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="duel-arena" href="#"><span class="material-symbols-outlined text-[24px]">swords</span><span class="font-label-sm text-label-sm">دوئل</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-space-xs transition-colors text-secondary font-label-lg" data-path="league-leaderboard" href="#"><span class="material-symbols-outlined text-[24px]">leaderboard</span><span class="font-label-sm text-label-sm">رتبه‌بندی</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile-store" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">پروفایل</span></a></div></nav><script src="shared.js" defer></script>
+</body></html>
